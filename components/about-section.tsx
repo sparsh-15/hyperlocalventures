@@ -61,9 +61,11 @@ export function AboutSection() {
 
             <ScrollReveal delay={0.1}>
               <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-                AI-Native Hyperlocal
+                MyOffers -
                 <br />
-                <span className="text-neon neon-text-glow">Commerce Platform</span>
+                <span className="text-neon neon-text-glow">
+                  An AI-Native Hyperlocal Commerce Platform
+                </span>
               </h2>
             </ScrollReveal>
 

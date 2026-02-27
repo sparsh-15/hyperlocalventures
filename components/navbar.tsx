@@ -2,19 +2,35 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 
-const navLinks = [
+type NavItem = {
+  label: string;
+  href: string;
+  children?: { label: string; href: string }[];
+};
+
+const navLinks: NavItem[] = [
   { label: "About", href: "#about" },
-  { label: "Problem", href: "#problem" },
-  { label: "Shopkeepers", href: "#shopkeepers" },
-  { label: "Customers", href: "#customers" },
+  {
+    label: "Proposition",
+    href: "#problem",
+    children: [
+      { label: "What we are Solving", href: "#problem" },
+      { label: "For Shopkeepers", href: "#shopkeepers" },
+      { label: "For Customers", href: "#customers" },
+    ],
+  },
   { label: "Impact", href: "#impact" },
+  { label: "Apply Loan", href: "/apply-loan" },
+  { label: "Careers", href: "/careers" },
+  { label: "Contact Us", href: "#contact" },
 ];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [propositionOpen, setPropositionOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -54,15 +70,51 @@ export function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden items-center gap-8 lg:flex">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm text-muted-foreground transition-colors duration-300 hover:text-neon relative after:absolute after:bottom-[-4px] after:left-0 after:h-px after:w-0 after:bg-neon after:transition-all after:duration-300 hover:after:w-full"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.children ? (
+              <div
+                key={link.label}
+                className="relative"
+                onMouseEnter={() => setPropositionOpen(true)}
+                onMouseLeave={() => setPropositionOpen(false)}
+              >
+                <button
+                  type="button"
+                  className="inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors duration-300 hover:text-neon"
+                  aria-haspopup="true"
+                >
+                  <span>{link.label}</span>
+                  <ChevronDown
+                    size={14}
+                    className={`transition-transform ${propositionOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+                {propositionOpen && (
+                  <div className="absolute left-1/2 top-full z-50 mt-3 w-56 -translate-x-1/2 translate-y-1">
+                    <div className="glass-strong rounded-2xl border border-neon/10 bg-background/95 p-3 shadow-xl backdrop-blur-md">
+                      {link.children.map((child) => (
+                        <a
+                          key={child.href}
+                          href={child.href}
+                          className="flex items-center rounded-xl px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-neon/5 hover:text-neon"
+                        >
+                          {child.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm text-muted-foreground transition-colors duration-300 hover:text-neon relative after:absolute after:bottom-[-4px] after:left-0 after:h-px after:w-0 after:bg-neon after:transition-all after:duration-300 hover:after:w-full"
+              >
+                {link.label}
+              </a>
+            )
+          )}
         </div>
 
         {/* CTA */}
@@ -100,16 +152,32 @@ export function Navbar() {
       {mobileOpen && (
         <div className="glass-strong mt-3 mx-4 rounded-2xl p-6 lg:hidden border border-neon/10">
           <div className="flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="text-base text-muted-foreground transition-colors hover:text-neon py-1"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.children ? (
+                <div key={link.label} className="flex flex-col gap-1">
+                  <span className="text-sm font-semibold text-foreground">{link.label}</span>
+                  {link.children.map((child) => (
+                    <a
+                      key={child.href}
+                      href={child.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="pl-3 text-base text-muted-foreground transition-colors hover:text-neon"
+                    >
+                      {child.label}
+                    </a>
+                  ))}
+                </div>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="text-base text-muted-foreground transition-colors hover:text-neon py-1"
+                >
+                  {link.label}
+                </a>
+              )
+            )}
             <div className="mt-2 h-px bg-linear-to-r from-transparent via-border to-transparent" />
             <a
               href="#contact"
