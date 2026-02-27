@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { ScrollReveal } from "./scroll-reveal"
 import { Brain, MapPin, Clock, ArrowUpRight } from "lucide-react"
 
@@ -47,31 +48,59 @@ export function AboutSection() {
       />
 
       <div className="relative mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-3xl text-center lg:mx-0 lg:text-left">
-          <ScrollReveal>
-            <div className="mb-6 inline-flex items-center justify-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5 lg:justify-start">
-              <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
-              <span className="text-xs font-semibold uppercase tracking-widest text-neon">
-                What We Are Building
-              </span>
+        <div className="lg:flex lg:items-center lg:gap-16">
+          <div className="mx-auto max-w-3xl text-center lg:mx-0 lg:flex-1 lg:text-left">
+            <ScrollReveal>
+              <div className="mb-6 inline-flex items-center justify-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5 lg:justify-start">
+                <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                <span className="text-xs font-semibold uppercase tracking-widest text-neon">
+                  What We Are Building
+                </span>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.1}>
+              <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+                AI-Native Hyperlocal
+                <br />
+                <span className="text-neon neon-text-glow">Commerce Platform</span>
+              </h2>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.2}>
+              <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground lg:mx-0">
+                We are building an AI-native hyperlocal commerce platform that
+                connects customers to the right nearby store in real time. Not
+                ecommerce. Not a marketplace.{" "}
+                <span className="text-foreground font-medium">A true intelligence layer.</span>
+              </p>
+            </ScrollReveal>
+          </div>
+
+          <ScrollReveal delay={0.25}>
+            <div className="mt-10 flex justify-center lg:mt-0 lg:flex-1">
+              <div className="hero-media-card motion-panel max-w-sm overflow-hidden rounded-2xl border border-border/50 bg-surface/80 backdrop-blur-sm">
+                <div className="relative aspect-[4/5] overflow-hidden">
+                  <Image
+                    src="/images/shopkeeper.jpg"
+                    alt="Local shopkeeper reviewing live offer performance"
+                    fill
+                    className="animate-media-pan object-cover"
+                    sizes="(min-width: 1280px) 24vw, 60vw"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/10 to-transparent" />
+                </div>
+                <div className="px-5 py-4">
+                  <p className="text-[10px] uppercase tracking-[0.18em] text-neon/80">
+                    Shopkeeper Intelligence
+                  </p>
+                  <p className="mt-1 text-sm font-semibold text-foreground">
+                    Live campaign analytics and demand signals
+                  </p>
+                </div>
+              </div>
             </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.1}>
-            <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-              AI-Native Hyperlocal
-              <br />
-              <span className="text-neon neon-text-glow">Commerce Platform</span>
-            </h2>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.2}>
-            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground lg:mx-0">
-              We are building an AI-native hyperlocal commerce platform that
-              connects customers to the right nearby store in real time. Not
-              ecommerce. Not a marketplace.{" "}
-              <span className="text-foreground font-medium">A true intelligence layer.</span>
-            </p>
           </ScrollReveal>
         </div>
 

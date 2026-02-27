@@ -55,52 +55,50 @@ export function HeroSection() {
 
       {/* Large moving media visuals */}
       <div
-        className="pointer-events-none absolute inset-0 z-[2] hidden xl:block"
+        className="pointer-events-none absolute inset-0 z-[2] hidden lg:block"
         aria-hidden="true"
       >
-        <div className="hero-orbit hero-orbit-left">
-          <div className="hero-media-card motion-panel animate-float-strong">
-            <div className="relative aspect-[4/5] overflow-hidden">
-              <Image
-                src="/images/shopkeeper.jpg"
-                alt=""
-                fill
-                className="animate-media-pan object-cover"
-                sizes="(min-width: 1280px) 24vw, 0px"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/10 to-transparent" />
-            </div>
-            <div className="px-5 py-4">
-              <p className="text-[10px] uppercase tracking-[0.18em] text-neon/80">
-                Shopkeeper Intelligence
-              </p>
-              <p className="mt-1 text-sm font-semibold text-foreground">
-                Live campaign analytics and demand signals
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="hero-orbit hero-orbit-right ">
-          <div className="hero-media-card motion-panel animate-float-strong-reverse">
-            <div className="relative aspect-[5/4] overflow-hidden">
+        <div className="hero-orbit hero-orbit-left -translate-y-3">
+          <div className="flex flex-col items-center animate-float-strong-reverse">
+            <div className="relative mx-auto aspect-square w-56 overflow-hidden rounded-full border border-border/40">
               <Image
                 src="/images/customer-discovery.jpg"
                 alt=""
                 fill
                 className="animate-media-pan object-cover"
-                sizes="(min-width: 1280px) 24vw, 0px"
+                sizes="(min-width: 1280px) 20vw, 0px"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/10 to-transparent" />
             </div>
-            <div className="px-5 py-4">
+            <div className="mt-3 text-center">
               <p className="text-[10px] uppercase tracking-[0.18em] text-neon/80">
                 Customer Discovery
               </p>
               <p className="mt-1 text-sm font-semibold text-foreground">
                 Proximity-led offer matching in real time
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="hero-orbit hero-orbit-right -translate-y-50">
+          <div className="flex flex-col items-center animate-float-strong">
+            <div className="relative mx-auto aspect-square w-56 overflow-hidden rounded-full border border-border/40">
+              <Image
+                src="/images/f-shopkeeper.png"
+                alt=""
+                fill
+                className="animate-media-pan object-cover"
+                sizes="(min-width: 1280px) 20vw, 0px"
+                priority
+              />
+            </div>
+            <div className="mt-3 text-center">
+              <p className="text-[10px] uppercase tracking-[0.18em] text-neon/80">
+                Partner Growth
+              </p>
+              <p className="mt-1 text-sm font-semibold text-foreground">
+                Turning local offers into loyal customers
               </p>
             </div>
           </div>

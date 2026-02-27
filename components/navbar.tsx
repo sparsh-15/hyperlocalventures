@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import { Menu, X, ArrowRight } from "lucide-react"
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { Menu, X, ArrowRight } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -10,39 +10,46 @@ const navLinks = [
   { label: "Shopkeepers", href: "#shopkeepers" },
   { label: "Customers", href: "#customers" },
   { label: "Impact", href: "#impact" },
-]
+];
 
 export function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
-  const [mobileOpen, setMobileOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40)
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "glass-strong py-3" : "py-5 bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "glass-strong py-2" : "py-3 bg-transparent"
       }`}
       role="navigation"
       aria-label="Main navigation"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <a href="#" className="group flex items-center">
-          <div className="relative h-20 w-[210px] overflow-hidden rounded-md transition-all duration-300 sm:h-14 sm:w-[250px]">
+        <a
+          href="#"
+          className="flex flex-col justify-center items-center"
+          aria-label="Hyperlocal home"
+        >
+          <div className="relative h-16 w-52 sm:h-16 sm:w-64 transition-all duration-300">
             <Image
               src="/logobg.png"
               alt="Hyperlocal logo"
               fill
-              className="scale-[1.25] object-contain object-left"
-              sizes="(min-width: 640px) 250px, 210px"
+              className="object-contain"
+              sizes="(min-width: 640px) 360px, 280px"
               priority
             />
           </div>
+          <p className="mt-0.5 text-[10px] font-medium uppercase tracking-[0.16em] text-muted-foreground/80 sm:text-xs">
+            Shop nearby. Save big.
+          </p>
         </a>
 
         {/* Desktop Links */}
@@ -68,14 +75,25 @@ export function Navbar() {
         </a>
 
         {/* Mobile Toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="text-foreground lg:hidden p-1"
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
-          aria-expanded={mobileOpen}
-        >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {mobileOpen ? (
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="text-foreground lg:hidden p-1"
+            aria-label="Close menu"
+            aria-expanded="true"
+          >
+            <X size={24} />
+          </button>
+        ) : (
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="text-foreground lg:hidden p-1"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <Menu size={24} />
+          </button>
+        )}
       </div>
 
       {/* Mobile Menu */}
@@ -92,7 +110,7 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <div className="mt-2 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+            <div className="mt-2 h-px bg-linear-to-r from-transparent via-border to-transparent" />
             <a
               href="#contact"
               onClick={() => setMobileOpen(false)}
@@ -105,5 +123,5 @@ export function Navbar() {
         </div>
       )}
     </nav>
-  )
+  );
 }
