@@ -127,11 +127,11 @@ export function HeroSection() {
         {/* Subtext */}
         <p
           data-animate
-          className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground opacity-0 sm:text-xl md:mt-10"
+          className="mx-auto mt-8 max-w-2xl text-lg leading-snug text-muted-foreground opacity-0 sm:text-lg md:mt-10"
           style={{ animationDelay: "0.5s" }}
         >
-          Connecting customers to the right nearby store and the right offer,
-          instantly.
+          Connect with your customers with precision and impact. 
+          ✨ Launch Discounts/Offers, showcase New Arrivals, Free Home Delivery etc. — all in just a few clicks. Target by Pincode, City, State, or Pan India and elevate your outreach effortlessly. 🚀
         </p>
 
         {/* CTAs */}
