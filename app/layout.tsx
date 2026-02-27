@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Space_Grotesk, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import SplashCursor from '../components/SplashCursor'
+import CustomCursor from '../components/CustomCursor'
 import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({
@@ -51,8 +52,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${geistMono.variable}`}>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased cursor-none">
         <SplashCursor />
+        <CustomCursor />
         {children}
         <Analytics />
       </body>
