@@ -111,7 +111,7 @@ export function HeroSection() {
         {/* Headline */}
         <h1
           data-animate
-          className="text-5xl font-bold leading-[1.05] tracking-tight text-foreground opacity-0 sm:text-6xl md:text-7xl lg:text-8xl xl:text-[6.5rem]"
+          className="text-5xl font-bold leading-[1.05] mt-5 tracking-tight text-foreground opacity-0 sm:text-6xl md:text-7xl lg:text-8xl xl:text-[6.5rem]"
           style={{ animationDelay: "0.3s" }}
         >
           <span className="block">THE INTELLIGENCE</span>
