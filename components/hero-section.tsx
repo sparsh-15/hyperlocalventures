@@ -33,6 +33,17 @@ export function HeroSection() {
     >
       <ParticleGrid />
 
+      {/* Cart pattern background */}
+      <div className="pointer-events-none absolute inset-0 z-0 opacity-15">
+        <Image
+          src="/images/cart-background.png"
+          alt="Subtle cart pattern background"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
       {/* Large radial glow */}
       <div
         className="absolute left-1/2 top-[36%] h-[920px] w-[920px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-20 pointer-events-none"

@@ -3,6 +3,7 @@ import { Space_Grotesk, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import SplashCursor from '../components/SplashCursor'
 import CustomCursor from '../components/CustomCursor'
+import { BackToTop } from '../components/BackToTop'
 import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({
@@ -55,6 +56,7 @@ export default function RootLayout({
       <body className="font-sans antialiased cursor-none">
         <SplashCursor />
         <CustomCursor />
+        <BackToTop />
         {children}
         <Analytics />
       </body>
