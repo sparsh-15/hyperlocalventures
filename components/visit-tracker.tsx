@@ -11,10 +11,12 @@ export function VisitTracker() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    if (pathname?.startsWith("/admin")) return;
-    if (sessionStorage.getItem(VISIT_KEY)) return;
+    const path = pathname ?? window?.location?.pathname ?? "/";
+    if (path.startsWith("/admin")) return;
 
+    if (sessionStorage.getItem(VISIT_KEY)) return;
     sessionStorage.setItem(VISIT_KEY, "1");
+
     recordVisit();
   }, [pathname]);
 
