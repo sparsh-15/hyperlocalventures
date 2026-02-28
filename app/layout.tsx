@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/next'
 import SplashCursor from '../components/SplashCursor'
 import CustomCursor from '../components/CustomCursor'
 import { BackToTop } from '../components/BackToTop'
+import { VisitTracker } from '../components/visit-tracker'
 import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({
@@ -58,6 +59,7 @@ export default function RootLayout({
         <CustomCursor />
         <BackToTop />
         {children}
+        <VisitTracker />
         <Analytics />
       </body>
     </html>
