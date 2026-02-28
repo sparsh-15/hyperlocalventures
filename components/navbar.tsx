@@ -53,12 +53,16 @@ export function Navbar() {
           className="flex flex-col justify-center items-center"
           aria-label="Hyperlocal home"
         >
-          <div className="relative h-16 w-52 sm:h-16 sm:w-64 transition-all duration-300">
+          <div
+            className="relative h-16 w-52 sm:h-16 sm:w-24 transition-all duration-300 overflow-visible flex items-center justify-center"
+            // style={{ boxShadow: "0 0 20px rgba(255,255,255,0.4), 0 0 40px rgba(255,255,255,0.2)" }}
+          >
             <Image
-              src="/logobg.png"
+              src="/images/logonew.png"
               alt="Hyperlocal logo"
               fill
               className="object-contain"
+              style={{ filter: "drop-shadow(0 0 8px rgba(255,255,255,0.8)) drop-shadow(0 0 20px rgba(255,255,255,0.5))" }}
               sizes="(min-width: 640px) 360px, 280px"
               priority
             />

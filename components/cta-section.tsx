@@ -95,10 +95,10 @@ export function CTASection() {
                       Email
                     </p>
                     <a
-                      href="mailto:hyperlocalventurespvtltd@outlook.com"
+                      href="mailto:support@hyperlocalventures.com"
                       className="text-sm text-foreground hover:text-neon transition-colors break-all"
                     >
-                      hyperlocalventurespvtltd@outlook.com
+                     support@hyperlocalventures.com
                     </a>
                   </div>
                 </div>

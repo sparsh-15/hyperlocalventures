@@ -34,7 +34,7 @@ export function HeroSection() {
       <ParticleGrid />
 
       {/* Cart pattern background */}
-      <div className="pointer-events-none absolute inset-0 z-0 opacity-15">
+      <div className="pointer-events-none absolute inset-0 z-0 opacity-5">
         <Image
           src="/images/cart-background.png"
           alt="Subtle cart pattern background"

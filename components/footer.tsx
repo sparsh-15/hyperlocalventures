@@ -12,12 +12,16 @@ export function Footer() {
           {/* Brand */}
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start">
-              <div className="relative h-24 w-[260px] overflow-hidden rounded-md">
+              <div
+                className="relative h-24 w-[260px] rounded-md overflow-visible flex items-center justify-start"
+                // style={{ boxShadow: "0 0 20px rgba(255,255,255,0.4), 0 0 40px rgba(255,255,255,0.2)" }}
+              >
                 <Image
-                  src="/logobg.png"
+                  src="/images/logonew.png"
                   alt="Hyperlocal logo"
                   fill
                   className="object-contain object-left"
+                  style={{ filter: "drop-shadow(0 0 8px rgba(255,255,255,0.8)) drop-shadow(0 0 20px rgba(255,255,255,0.5))" }}
                   sizes="260px"
                 />
               </div>
@@ -88,10 +92,13 @@ export function Footer() {
               <p>
                 Email:{" "}
                 <a
-                  href="mailto:hyperlocalventurespvtltd@outlook.com"
+                  href="mailto:support@hyperlocalventures.com"
+                  title="Email Hyperlocal Ventures support"
+                  target="_self"
+                  rel="noopener"
                   className="hover:text-neon transition-colors"
                 >
-                  hyperlocalventurespvtltd@outlook.com
+                  support@hyperlocalventures.com
                 </a>
               </p>
             </div>

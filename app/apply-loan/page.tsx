@@ -21,10 +21,10 @@ export default function ApplyLoanPage() {
           <p className="text-xs text-muted-foreground/80">
             Want to know when this launches? Drop us a line at{" "}
             <a
-              href="mailto:hyperlocalventurespvtltd@outlook.com"
+              href="mailto:support@hyperlocalventures.com"
               className="font-semibold text-neon hover:underline"
             >
-              hyperlocalventurespvtltd@outlook.com
+             support@hyperlocalventures.com
             </a>
             .
           </p>
