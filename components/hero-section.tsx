@@ -213,7 +213,7 @@ export function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="animate-float absolute bottom-8 left-1/2 z-10 -translate-x-1/2">
+      <div className="animate-float absolute bottom-28 left-1/2 z-10 -translate-x-1/2">
         <a
           href="#about"
           className="flex flex-col items-center gap-1 text-muted-foreground/50 transition-colors hover:text-neon"
