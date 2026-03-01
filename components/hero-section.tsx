@@ -131,7 +131,6 @@ export function HeroSection() {
           </span>
           <span className="mt-1 block md:mt-2">
             <span className="neon-text-glow text-neon">COMMERCE</span>
-            <span className="text-neon">.</span>
           </span>
         </h1>
 
@@ -141,8 +140,9 @@ export function HeroSection() {
           className="mx-auto mt-8 max-w-2xl text-lg leading-snug text-muted-foreground opacity-0 sm:text-lg md:mt-10"
           style={{ animationDelay: "0.5s" }}
         >
-          Connect with your customers with precision and impact. 
-          ✨ Launch Discounts/Offers, showcase New Arrivals, Free Home Delivery etc. — all in just a few clicks. Target by Pincode, City, State, or Pan India and elevate your outreach effortlessly. 🚀
+         For Business Owners 🚀 | Launch Offers 🎯 | Promote New Arrivals ✨ | Target by Area 📍 | Free Home Delivery 🚚 | Boost Sales 📈 <hr />
+
+For Customers 🛍️ | Discover Local Deals 💰 | Explore New Arrivals 🌟 | Easy Home Delivery 🚚 | Shop Smart & Save 🎉
         </p>
 
         {/* CTAs */}

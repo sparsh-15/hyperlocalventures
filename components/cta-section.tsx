@@ -252,7 +252,7 @@ export function CTASection() {
                       className={`h-10 rounded-lg border px-3 text-sm text-foreground outline-none transition-colors focus:border-neon bg-background/60 ${
                         fieldErrors.name ? "border-red-500" : "border-border/60"
                       }`}
-                      placeholder="Your full name (min 2 characters)"
+                      placeholder="Your full name"
                       required
                       disabled={isSubmitting}
                       minLength={2}
@@ -274,7 +274,7 @@ export function CTASection() {
                       className={`h-10 rounded-lg border px-3 text-sm text-foreground outline-none transition-colors focus:border-neon bg-background/60 ${
                         fieldErrors.phone ? "border-red-500" : "border-border/60"
                       }`}
-                      placeholder="10-digit mobile (e.g. 9876543210)"
+                      placeholder="10-digit mobile"
                       required
                       disabled={isSubmitting}
                       inputMode="numeric"

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 
@@ -31,12 +31,24 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [propositionOpen, setPropositionOpen] = useState(false);
+  const propositionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    if (!propositionOpen) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      if (propositionRef.current && !propositionRef.current.contains(e.target as Node)) {
+        setPropositionOpen(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [propositionOpen]);
 
   return (
     <nav
@@ -76,16 +88,18 @@ export function Navbar() {
         <div className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) =>
             link.children ? (
-              <div
-                key={link.label}
-                className="relative"
-                onMouseEnter={() => setPropositionOpen(true)}
-                onMouseLeave={() => setPropositionOpen(false)}
-              >
+              <div key={link.label} className="relative" ref={propositionRef}>
                 <button
                   type="button"
-                  className="inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors duration-300 hover:text-neon"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setPropositionOpen((prev) => !prev);
+                  }}
+                  className={`inline-flex items-center gap-1 text-sm transition-colors duration-300 hover:text-neon ${
+                    propositionOpen ? "text-neon" : "text-muted-foreground"
+                  }`}
                   aria-haspopup="true"
+                  aria-expanded={propositionOpen}
                 >
                   <span>{link.label}</span>
                   <ChevronDown
@@ -94,12 +108,13 @@ export function Navbar() {
                   />
                 </button>
                 {propositionOpen && (
-                  <div className="absolute left-1/2 top-full z-50 mt-3 w-56 -translate-x-1/2 translate-y-1">
+                  <div className="absolute left-0 top-full z-50 mt-1.5 w-56">
                     <div className="glass-strong rounded-2xl border border-neon/10 bg-background/95 p-3 shadow-xl backdrop-blur-md">
                       {link.children.map((child) => (
                         <a
                           key={child.href}
                           href={child.href}
+                          onClick={() => setPropositionOpen(false)}
                           className="flex items-center rounded-xl px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-neon/5 hover:text-neon"
                         >
                           {child.label}
