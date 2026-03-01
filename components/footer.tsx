@@ -12,17 +12,14 @@ export function Footer() {
           {/* Brand */}
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start">
-              <div
-                className="relative h-24 w-[260px] rounded-md overflow-visible flex items-center justify-start"
-                // style={{ boxShadow: "0 0 20px rgba(255,255,255,0.4), 0 0 40px rgba(255,255,255,0.2)" }}
-              >
+              <div className="relative mx-auto h-24 w-full max-w-[260px] rounded-md overflow-visible flex items-center justify-center md:mx-0 md:justify-start md:w-[260px]">
                 <Image
                   src="/images/logonew.png"
                   alt="Hyperlocal logo"
                   fill
-                  className="object-contain object-left"
+                  className="object-contain object-center md:object-left"
                   style={{ filter: "drop-shadow(0 0 8px rgba(255,255,255,0.8)) drop-shadow(0 0 20px rgba(255,255,255,0.5))" }}
-                  sizes="260px"
+                  sizes="(max-width: 768px) 100vw, 260px"
                 />
               </div>
             </div>

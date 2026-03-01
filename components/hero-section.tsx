@@ -116,13 +116,13 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="relative z-10 mx-auto max-w-6xl px-6 text-center mt-20">
+      <div className="relative z-10 mx-auto max-w-6xl px-4 text-center mt-16 sm:px-6 sm:mt-20">
       
 
         {/* Headline */}
         <h1
           data-animate
-          className="text-5xl font-bold leading-[1.05] mt-5 tracking-tight text-foreground opacity-0 sm:text-6xl md:text-7xl lg:text-8xl xl:text-[6.5rem]"
+          className="text-4xl font-bold leading-[1.05] mt-8 tracking-tight text-foreground opacity-0 sm:text-5xl sm:mt-5 md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[6.5rem]"
           style={{ animationDelay: "0.3s" }}
         >
           <span className="block">THE INTELLIGENCE</span>
@@ -135,15 +135,25 @@ export function HeroSection() {
         </h1>
 
         {/* Subtext */}
-        <p
+        <div
           data-animate
-          className="mx-auto mt-8 max-w-2xl text-lg leading-snug text-muted-foreground opacity-0 sm:text-lg md:mt-10"
+          className="mx-auto mt-6 max-w-2xl px-1 text-base leading-snug text-muted-foreground opacity-0 sm:mt-8 sm:text-lg md:mt-10"
           style={{ animationDelay: "0.5s" }}
         >
-         For Business Owners 🚀 | Launch Offers 🎯 | Promote New Arrivals ✨ | Target by Area 📍 | Free Home Delivery 🚚 | Boost Sales 📈 <hr />
-
-For Customers 🛍️ | Discover Local Deals 💰 | Explore New Arrivals 🌟 | Easy Home Delivery 🚚 | Shop Smart & Save 🎉
-        </p>
+          <p className="mb-3 text-left sm:text-center">
+            <span className="font-bold text-neon">For Business Owners</span>
+            <span className="ml-1">🚀</span>
+            <span className="mx-1.5 text-muted-foreground/60">|</span>
+            <span className="break-words">Launch Offers 🎯 | Promote New Arrivals ✨ | Target by Area 📍 | Free Home Delivery 🚚 | Boost Sales 📈</span>
+          </p>
+          <hr className="my-4 border-border/40" />
+          <p className="text-left sm:text-center">
+            <span className="font-bold text-neon">For Customers</span>
+            <span className="ml-1">🛍️</span>
+            <span className="mx-1.5 text-muted-foreground/60">|</span>
+            <span className="break-words">Discover Local Deals 💰 | Explore New Arrivals 🌟 | Easy Home Delivery 🚚 | Shop Smart & Save 🎉</span>
+          </p>
+        </div>
 
         {/* CTAs */}
         <div

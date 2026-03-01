@@ -53,8 +53,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${geistMono.variable}`}>
-      <body className="font-sans antialiased cursor-none">
+    <html lang="en" className={`${spaceGrotesk.variable} ${geistMono.variable}`} suppressHydrationWarning>
+      <body className="font-sans antialiased cursor-none min-h-screen" style={{ backgroundColor: 'var(--background)' }}>
         <SplashCursor />
         <CustomCursor />
         <BackToTop />

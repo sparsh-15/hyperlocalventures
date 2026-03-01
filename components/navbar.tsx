@@ -58,28 +58,25 @@ export function Navbar() {
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
-        {/* Logo */}
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
+        {/* Logo - responsive alignment */}
         <a
           href="#"
-          className="flex flex-col justify-center items-center"
+          className="flex min-w-0 shrink-0 flex-col items-start justify-center sm:items-center"
           aria-label="Hyperlocal home"
         >
-          <div
-            className="relative h-16 w-52 sm:h-16 sm:w-24 transition-all duration-300 overflow-visible flex items-center justify-center"
-            // style={{ boxShadow: "0 0 20px rgba(255,255,255,0.4), 0 0 40px rgba(255,255,255,0.2)" }}
-          >
+          <div className="relative h-12 w-28 sm:h-16 sm:w-24 flex items-center justify-center shrink-0">
             <Image
               src="/images/logonew.png"
               alt="Hyperlocal logo"
               fill
-              className="object-contain"
+              className="object-contain object-left sm:object-center"
               style={{ filter: "drop-shadow(0 0 8px rgba(255,255,255,0.8)) drop-shadow(0 0 20px rgba(255,255,255,0.5))" }}
-              sizes="(min-width: 640px) 360px, 280px"
+              sizes="(max-width: 640px) 140px, 360px"
               priority
             />
           </div>
-          <p className="mt-0.5 text-[10px] font-medium uppercase tracking-[0.16em] text-muted-foreground/80 sm:text-xs">
+          <p className="mt-0.5 text-[9px] sm:text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground/80 sm:text-center">
             Shop nearby. Save big.
           </p>
         </a>
