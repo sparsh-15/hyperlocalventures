@@ -52,8 +52,8 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass-strong py-2" : "py-3 bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 border-none transition-all duration-300 ${
+        scrolled ? "py-2 bg-[rgba(18,18,26,0.85)] backdrop-blur-[40px]" : "py-3 bg-transparent"
       }`}
       role="navigation"
       aria-label="Main navigation"

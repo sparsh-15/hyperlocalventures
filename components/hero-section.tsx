@@ -211,7 +211,7 @@ export function HeroSection() {
               key={stat.label}
               className="bg-surface/80 p-6 text-center backdrop-blur-sm transition-all duration-500 hover:bg-neon/5 md:p-8"
             >
-              <p className="text-base font-bold tracking-wide text-neon sm:text-lg md:text-xl">
+              <p className="whitespace-nowrap text-base font-bold tracking-wide text-neon sm:text-lg md:text-xl">
                 {stat.value}
               </p>
               <p className="mt-1.5 text-xs tracking-wider text-muted-foreground uppercase">
