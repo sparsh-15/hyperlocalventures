@@ -13,7 +13,7 @@ import {
 
 const aboutImages = [
   { src: "/images/shopkeeper.jpg", alt: "Local shopkeeper reviewing live offer performance" },
-  { src: "/images/img2.png", alt: "Customer discovering local deals" },
+  { src: "/images/img21.png", alt: "Customer discovering local deals" },
   { src: "/images/img3.png", alt: "Partner shopkeeper growth" },
   { src:"/images/img4.png",alt: "Hyperlocal commerce" },
   { src: "/images/img5.png", alt: "Local commerce platform" },
