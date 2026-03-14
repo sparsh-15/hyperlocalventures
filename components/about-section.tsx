@@ -1,8 +1,23 @@
 "use client"
 
+import { useState, useEffect, useCallback } from "react"
 import Image from "next/image"
 import { ScrollReveal } from "./scroll-reveal"
-import { Brain, MapPin, Clock, ArrowUpRight } from "lucide-react"
+import { Brain, MapPin, Clock, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  type CarouselApi,
+} from "@/components/ui/carousel"
+
+const aboutImages = [
+  { src: "/images/shopkeeper.jpg", alt: "Local shopkeeper reviewing live offer performance" },
+  { src: "/images/img2.png", alt: "Customer discovering local deals" },
+  { src: "/images/img3.png", alt: "Partner shopkeeper growth" },
+  { src:"/images/img4.png",alt: "Hyperlocal commerce" },
+  { src: "/images/img5.png", alt: "Local commerce platform" },
+]
 
 const pillars = [
   {
@@ -32,6 +47,24 @@ const pillars = [
 ]
 
 export function AboutSection() {
+  const [api, setApi] = useState<CarouselApi>()
+  const [current, setCurrent] = useState(0)
+
+  const scrollPrev = useCallback(() => api?.scrollPrev(), [api])
+  const scrollNext = useCallback(() => api?.scrollNext(), [api])
+
+  useEffect(() => {
+    if (!api) return
+    setCurrent(api.selectedScrollSnap())
+    api.on("select", () => setCurrent(api.selectedScrollSnap()))
+  }, [api])
+
+  useEffect(() => {
+    if (!api) return
+    const interval = setInterval(() => api.scrollNext(), 2000)
+    return () => clearInterval(interval)
+  }, [api])
+
   return (
     <section
       id="about"
@@ -81,21 +114,68 @@ export function AboutSection() {
 
           <ScrollReveal delay={0.25}>
             <div className="mt-10 flex justify-center lg:mt-0 lg:flex-1">
-              <div className="hero-media-card motion-panel max-w-sm overflow-hidden rounded-2xl border border-border/50 bg-surface/80 backdrop-blur-sm">
-                <div className="relative aspect-[4/5] overflow-hidden">
-                  <Image
-                    src="/images/shopkeeper.jpg"
-                    alt="Local shopkeeper reviewing live offer performance"
-                    fill
-                    className="animate-media-pan object-cover"
-                    sizes="(min-width: 1280px) 24vw, 60vw"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/10 to-transparent" />
-                </div>
+              <div className="hero-media-card motion-panel relative w-full max-w-sm overflow-hidden rounded-2xl border border-border/50 bg-surface/80 backdrop-blur-sm">
+                <Carousel
+                  setApi={setApi}
+                  opts={{
+                    align: "start",
+                    loop: true,
+                    duration: 28,
+                  }}
+                  className="w-full"
+                >
+                  <CarouselContent className="-ml-0">
+                    {aboutImages.map((img, index) => (
+                      <CarouselItem key={img.src} className="pl-0">
+                        <div className="relative aspect-[4/5] overflow-hidden">
+                          <Image
+                            src={img.src}
+                            alt={img.alt}
+                            fill
+                            className="object-cover transition-transform duration-500 ease-out"
+                            sizes="(min-width: 1280px) 24vw, 60vw"
+                            priority={index === 0}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/10 to-transparent" />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <button
+                    type="button"
+                    onClick={scrollPrev}
+                    className="absolute left-2 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-border/60 bg-background/80 text-foreground shadow-md backdrop-blur-sm transition-colors hover:bg-neon/10 hover:border-neon/40 hover:text-neon"
+                    aria-label="Previous slide"
+                  >
+                    <ChevronLeft size={20} />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={scrollNext}
+                    className="absolute right-2 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-border/60 bg-background/80 text-foreground shadow-md backdrop-blur-sm transition-colors hover:bg-neon/10 hover:border-neon/40 hover:text-neon"
+                    aria-label="Next slide"
+                  >
+                    <ChevronRight size={20} />
+                  </button>
+                  <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5">
+                    {aboutImages.map((_, index) => (
+                      <button
+                        key={index}
+                        type="button"
+                        onClick={() => api?.scrollTo(index)}
+                        className={`h-1.5 rounded-full transition-all duration-300 ${
+                          index === current
+                            ? "w-6 bg-neon"
+                            : "w-1.5 bg-white/40 hover:bg-white/60"
+                        }`}
+                        aria-label={`Go to slide ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                </Carousel>
                 <div className="px-5 py-4">
                   <p className="text-[10px] uppercase tracking-[0.18em] text-neon/80">
-                    Shopkeeper Intelligence
+                    MY OFFER
                   </p>
                   <p className="mt-1 text-sm font-semibold text-foreground">
                     Live campaign analytics and demand signals
