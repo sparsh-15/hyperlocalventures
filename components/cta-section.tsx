@@ -183,10 +183,10 @@ export function CTASection() {
                       Phone
                     </p>
                     <a
-                      href="tel:+917875957815"
+                      href="tel:+918600154603"
                       className="text-sm text-foreground hover:text-neon transition-colors"
                     >
-                      +91 78759 57815
+                      +91 86001 54603
                     </a>
                   </div>
                 </div>
