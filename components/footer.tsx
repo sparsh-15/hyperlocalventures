@@ -85,7 +85,7 @@ export function Footer() {
               <p className="font-semibold tracking-widest uppercase text-muted-foreground">
                 Contact
               </p>
-              <p>Phone: <a href="tel:+918600154603" className="hover:text-neon transition-colors">+91 86001 54603</a></p>
+              <p>Phone: <a href="tel:+917875957815" className="hover:text-neon transition-colors">+91 78759 57815</a></p>
               <p>
                 Email:{" "}
                 <a
