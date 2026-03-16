@@ -178,7 +178,7 @@ export function AboutSection() {
                     MY OFFER
                   </p>
                   <p className="mt-1 text-sm font-semibold text-foreground">
-                    Live campaign analytics and demand signals
+                    Live view of offers and local demand
                   </p>
                 </div>
               </div>
