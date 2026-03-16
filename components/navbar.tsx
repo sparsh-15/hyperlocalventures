@@ -166,45 +166,49 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="glass-strong mt-3 mx-4 rounded-2xl p-6 lg:hidden border border-neon/10">
-          <div className="flex flex-col gap-4">
-            {navLinks.map((link) =>
-              link.children ? (
-                <div key={link.label} className="flex flex-col gap-1">
-                  <span className="text-sm font-semibold text-foreground">{link.label}</span>
-                  {link.children.map((child) => (
-                    <a
-                      key={child.href}
-                      href={child.href}
-                      onClick={() => setMobileOpen(false)}
-                      className="pl-3 text-base text-muted-foreground transition-colors hover:text-neon"
-                    >
-                      {child.label}
-                    </a>
-                  ))}
-                </div>
-              ) : (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="text-base text-muted-foreground transition-colors hover:text-neon py-1"
-                >
-                  {link.label}
-                </a>
-              )
-            )}
-            <div className="mt-2 h-px bg-linear-to-r from-transparent via-border to-transparent" />
-            <a
-              href="#contact"
-              onClick={() => setMobileOpen(false)}
-              className="mt-2 flex items-center justify-center gap-2 rounded-full bg-neon px-6 py-3 text-sm font-bold text-background"
-            >
-              Partner With Us
-              <ArrowRight size={14} />
-            </a>
+        <>
+          {/* Backdrop overlay to mute background content on mobile */}
+          <div className="fixed inset-0 z-40 bg-black/40 lg:hidden" aria-hidden="true" />
+          <div className="glass-strong-mobile mt-3 mx-4 rounded-2xl p-6 lg:hidden border border-neon/10 relative z-50">
+            <div className="flex flex-col gap-4">
+              {navLinks.map((link) =>
+                link.children ? (
+                  <div key={link.label} className="flex flex-col gap-1">
+                    <span className="text-sm font-semibold text-foreground">{link.label}</span>
+                    {link.children.map((child) => (
+                      <a
+                        key={child.href}
+                        href={child.href}
+                        onClick={() => setMobileOpen(false)}
+                        className="pl-3 text-base text-muted-foreground transition-colors hover:text-neon"
+                      >
+                        {child.label}
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="text-base text-muted-foreground transition-colors hover:text-neon py-1"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
+              <div className="mt-2 h-px bg-linear-to-r from-transparent via-border to-transparent" />
+              <a
+                href="#contact"
+                onClick={() => setMobileOpen(false)}
+                className="mt-2 flex items-center justify-center gap-2 rounded-full bg-neon px-6 py-3 text-sm font-bold text-background"
+              >
+                Partner With Us
+                <ArrowRight size={14} />
+              </a>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </nav>
   );

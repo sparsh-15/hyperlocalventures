@@ -132,6 +132,14 @@ html {
   border: 1px solid rgba(0, 255, 132, 0.12);
 }
 
+/* More opaque glass for mobile overlays (e.g., mobile nav) */
+.glass-strong-mobile {
+  background: rgba(11, 11, 15, 0.96);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(0, 255, 132, 0.16);
+}
+
 /* Neon glow utilities */
 .neon-glow {
   box-shadow: 0 0 20px rgba(0, 255, 132, 0.15), 0 0 60px rgba(0, 255, 132, 0.05);
