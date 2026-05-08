@@ -1,6 +1,0 @@
-{
-  "projectId": "hyprlocalventuresweb",
-  "firestore": {
-    "rules": "firestore.rules"
-  }
-}
