@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="relative border-t border-border/10 bg-white overflow-hidden">
       {/* Subtle bottom glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[300px] w-full max-w-4xl bg-primary/5 blur-[100px] rounded-full pointer-events-none opacity-50" />
-      
+
       {/* Divider */}
       <div className="absolute top-0 left-0 h-px w-full bg-slate-200" />
 
@@ -14,21 +14,24 @@ export function Footer() {
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           {/* Brand */}
           <div className="text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
+            <div className="flex flex-col items-center justify-center md:items-start md:justify-start gap-1 mb-4">
               <Image
                 src="/images/logo.svg"
                 alt="ZoPin Logo"
-                width={180}
-                height={60}
-                className="h-12 w-auto"
+                width={160}
+                height={50}
+                className="h-10 w-auto"
               />
+              <span className="text-[9px] font-bold text-primary uppercase tracking-[0.2em] ml-1 opacity-80">
+                by Hyperlocal Ventures
+              </span>
             </div>
             <p className="mt-4 text-[11px] font-medium uppercase tracking-widest text-slate-500 leading-relaxed">
               Hyperlocal Ventures Private Limited<br />
               Pune, Maharashtra, India
             </p>
-            <a 
-              href="https://zopin.in" 
+            <a
+              href="https://zopin.in"
               className="mt-4 block text-sm font-bold text-neon hover:underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -103,7 +106,7 @@ export function Footer() {
                   </a>
                 </div>
               </div>
-              
+
               <div className="flex flex-col gap-3">
                 <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-900">Contact</h4>
                 <div className="space-y-1">

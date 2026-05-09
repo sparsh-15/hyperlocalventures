@@ -9,6 +9,9 @@ export default function ApplyLoanPage() {
           Smart Capital for{" "}
           <span className="text-neon neon-text-glow">Local Businesses</span>
         </h1>
+        <p className="mt-2 text-[10px] font-bold text-primary uppercase tracking-[0.2em] opacity-80">
+          by Hyperlocal Ventures
+        </p>
         <div className="mt-8 max-w-xl text-center space-y-4">
           <p className="inline-flex items-center justify-center rounded-full border border-neon/30 bg-neon/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-neon">
             Coming Soon
@@ -21,10 +24,10 @@ export default function ApplyLoanPage() {
           <p className="text-xs text-muted-foreground/80">
             Want to know when this launches? Drop us a line at{" "}
             <a
-              href="mailto:support@hyperlocalventures.com"
+              href="mailto:support@zopin.in"
               className="font-semibold text-neon hover:underline"
             >
-             support@hyperlocalventures.com
+              support@zopin.in
             </a>
             .
           </p>

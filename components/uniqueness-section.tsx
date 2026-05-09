@@ -58,31 +58,27 @@ export function UniquenessSection() {
                 {comparisons.map((item) => (
                   <div
                     key={item.label}
-                    className={`motion-panel group relative overflow-hidden rounded-2xl border p-6 transition-all duration-500 md:p-8 ${
-                      item.isUs
+                    className={`motion-panel group relative overflow-hidden rounded-2xl border p-6 transition-all duration-500 md:p-8 ${item.isUs
                         ? "border-neon/50 bg-neon/5 neon-glow-strong"
                         : "border-border/50 bg-surface/80 hover:border-border"
-                    }`}
+                      }`}
                   >
                     {/* Status icon */}
-                    <div className={`flex h-8 w-8 items-center justify-center rounded-full mx-auto mb-4 ${
-                      item.isUs
+                    <div className={`flex h-8 w-8 items-center justify-center rounded-full mx-auto mb-4 ${item.isUs
                         ? "bg-neon/20 text-neon"
                         : "bg-border/50 text-muted-foreground/50"
-                    }`}>
+                      }`}>
                       {item.isUs ? <Check size={16} /> : <X size={16} />}
                     </div>
 
                     <span
-                      className={`block text-sm font-bold ${
-                        item.isUs ? "text-neon" : "text-muted-foreground line-through decoration-muted-foreground/30"
-                      }`}
+                      className={`block text-sm font-bold ${item.isUs ? "text-neon" : "text-muted-foreground line-through decoration-muted-foreground/30"
+                        }`}
                     >
                       {item.label}
                     </span>
-                    <p className={`mt-2 text-xs ${
-                      item.isUs ? "text-neon/80" : "text-muted-foreground/60"
-                    }`}>
+                    <p className={`mt-2 text-xs ${item.isUs ? "text-neon/80" : "text-muted-foreground/60"
+                      }`}>
                       {item.desc}
                     </p>
                     {item.isUs && (

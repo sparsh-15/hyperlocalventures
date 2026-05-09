@@ -85,7 +85,7 @@ export function HeroSection() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 text-center mt-16 sm:px-6 sm:mt-20">
-      
+
 
         {/* Headline */}
         <h1
@@ -131,7 +131,7 @@ export function HeroSection() {
         </div>
 
         {/* Enhanced Mobile Visual */}
-        <div 
+        <div
           data-animate
           className="relative mt-12 block lg:hidden opacity-0"
           style={{ animationDelay: "1.1s" }}
@@ -168,7 +168,7 @@ export function HeroSection() {
                 />
               </div>
             </div>
-            
+
             {/* Glow effect behind phone */}
             <div className="absolute inset-0 -z-10 bg-primary/20 blur-[60px] rounded-full" />
           </div>

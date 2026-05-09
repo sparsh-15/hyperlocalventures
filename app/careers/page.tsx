@@ -8,6 +8,9 @@ export default function CareersPage() {
         <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
           Join the <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-neon to-accent animate-gradient-x">ZoPin</span> Team
         </h1>
+        <p className="mt-2 text-[10px] font-bold text-primary uppercase tracking-[0.2em] opacity-80">
+          by Hyperlocal Ventures
+        </p>
         <div className="mt-8 max-w-xl text-center space-y-4">
           <p className="inline-flex items-center justify-center rounded-full border border-neon/30 bg-neon/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-neon">
             Coming Soon

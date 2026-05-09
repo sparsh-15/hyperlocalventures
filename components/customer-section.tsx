@@ -93,11 +93,10 @@ export function CustomerSection() {
                       {["All", "Grocery", "Laundry", "Electronics"].map((cat, i) => (
                         <span
                           key={cat}
-                          className={`shrink-0 rounded-full px-3 py-1 text-[9px] font-medium ${
-                            i === 0
+                          className={`shrink-0 rounded-full px-3 py-1 text-[9px] font-medium ${i === 0
                               ? "bg-neon text-background"
                               : "bg-surface border border-border/50 text-muted-foreground"
-                          }`}
+                            }`}
                         >
                           {cat}
                         </span>

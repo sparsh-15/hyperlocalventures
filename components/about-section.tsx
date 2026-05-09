@@ -15,7 +15,7 @@ const aboutImages = [
   { src: "/images/shopkeeper.jpg", alt: "Local shopkeeper reviewing live offer performance" },
   { src: "/images/img21.png", alt: "Customer discovering local deals" },
   { src: "/images/img3.png", alt: "Partner shopkeeper growth" },
-  { src:"/images/img4.png",alt: "Hyperlocal commerce" },
+  { src: "/images/img4.png", alt: "Hyperlocal commerce" },
   { src: "/images/img5.png", alt: "Local commerce platform" },
 ]
 
@@ -163,24 +163,28 @@ export function AboutSection() {
                         key={index}
                         type="button"
                         onClick={() => api?.scrollTo(index)}
-                        className={`h-1.5 rounded-full transition-all duration-300 ${
-                          index === current
+                        className={`h-1.5 rounded-full transition-all duration-300 ${index === current
                             ? "w-6 bg-neon"
                             : "w-1.5 bg-white/40 hover:bg-white/60"
-                        }`}
+                          }`}
                         aria-label={`Go to slide ${index + 1}`}
                       />
                     ))}
                   </div>
                 </Carousel>
                 <div className="px-5 py-4">
-                  <Image
-                    src="/images/logo.svg"
-                    alt="ZoPin Logo"
-                    width={100}
-                    height={32}
-                    className="h-7 w-auto"
-                  />
+                  <div className="flex flex-col">
+                    <Image
+                      src="/images/logo.svg"
+                      alt="ZoPin Logo"
+                      width={100}
+                      height={32}
+                      className="h-7 w-auto"
+                    />
+                    <span className="text-[8px] font-bold text-primary uppercase tracking-[0.2em] ml-0.5 opacity-80">
+                      by Hyperlocal Ventures
+                    </span>
+                  </div>
                   <p className="mt-2 text-sm font-semibold text-foreground">
                     Live view of offers and local demand
                   </p>

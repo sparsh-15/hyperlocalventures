@@ -62,10 +62,10 @@ export default function RootLayout({
         <SplashCursor />
         <CustomCursor />
         <BackToTop />
-        
+
         {/* Global Background System */}
         <ParticleGrid />
-        
+
         {/* Cart pattern background - Global & Fixed */}
         <div className="pointer-events-none fixed inset-0 z-0 opacity-[0.05]">
           <Image

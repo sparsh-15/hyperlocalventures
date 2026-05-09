@@ -52,9 +52,8 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 border-none transition-all duration-300 ${
-        scrolled ? "py-2 bg-white/80 backdrop-blur-[40px] shadow-sm" : "py-3 bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 border-none transition-all duration-300 ${scrolled ? "py-2 bg-white/80 backdrop-blur-[40px] shadow-sm" : "py-3 bg-transparent"
+        }`}
       role="navigation"
       aria-label="Main navigation"
     >
@@ -65,14 +64,19 @@ export function Navbar() {
           className="flex min-w-0 shrink-0 items-center"
           aria-label="ZoPin home"
         >
-          <Image
-            src="/images/logo.svg"
-            alt="ZoPin Logo"
-            width={180}
-            height={60}
-            className="h-10 w-auto sm:h-14"
-            priority
-          />
+          <div className="flex flex-col">
+            <Image
+              src="/images/logo.svg"
+              alt="ZoPin Logo"
+              width={160}
+              height={50}
+              className="h-10 w-auto sm:h-12"
+              priority
+            />
+            <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] -mt-1 ml-1 opacity-80">
+              by Hyperlocal Ventures
+            </span>
+          </div>
         </a>
 
         {/* Desktop Links */}
@@ -86,9 +90,8 @@ export function Navbar() {
                     e.stopPropagation();
                     setPropositionOpen((prev) => !prev);
                   }}
-                  className={`inline-flex items-center gap-1 text-sm font-medium transition-colors duration-300 hover:text-primary ${
-                    propositionOpen ? "text-primary" : "text-muted-foreground"
-                  }`}
+                  className={`inline-flex items-center gap-1 text-sm font-medium transition-colors duration-300 hover:text-primary ${propositionOpen ? "text-primary" : "text-muted-foreground"
+                    }`}
                   aria-haspopup="true"
                   aria-expanded={propositionOpen}
                 >
