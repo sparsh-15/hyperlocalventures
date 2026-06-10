@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import { Space_Grotesk, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import SplashCursor from '../components/SplashCursor'
-import CustomCursor from '../components/CustomCursor'
+// import SplashCursor from '../components/SplashCursor'
+// import CustomCursor from '../components/CustomCursor'
 import { BackToTop } from '../components/BackToTop'
 import { VisitTracker } from '../components/visit-tracker'
 import { Navbar } from '../components/navbar'
@@ -58,9 +58,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${geistMono.variable}`} suppressHydrationWarning>
-      <body className="font-sans antialiased cursor-none min-h-screen" style={{ backgroundColor: 'var(--background)' }} suppressHydrationWarning>
-        <SplashCursor />
-        <CustomCursor />
+      <body className="font-sans antialiased min-h-screen" style={{ backgroundColor: 'var(--background)' }} suppressHydrationWarning>
+        {/* <SplashCursor /> */}
+        {/* <CustomCursor /> */}
         <BackToTop />
 
         {/* Global Background System */}

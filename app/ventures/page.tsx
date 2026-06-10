@@ -29,14 +29,14 @@ export default function VenturesPage() {
           <div className="relative mx-auto max-w-4xl px-6 text-center">
             <ScrollReveal>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                 <span className="text-xs font-semibold uppercase tracking-widest text-neon">Our Ventures</span>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
                 Products We{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Build</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Build</span>
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
@@ -79,9 +79,9 @@ export default function VenturesPage() {
                       href="https://zopin.in"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-neon px-8 py-3 text-sm font-bold text-white uppercase tracking-wide transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(217,70,239,0.4)]"
+                      className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-neon px-8 py-3 text-sm font-bold text-white uppercase tracking-wide transition-all duration-300"
                     >
-                      <span className="animate-shimmer pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+                      
                       <span className="relative">Visit Zopin</span>
                       <ExternalLink size={14} className="relative" />
                     </a>

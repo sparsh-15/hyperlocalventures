@@ -62,14 +62,14 @@ export default function ContactPage() {
           <div className="relative mx-auto max-w-4xl px-6 text-center">
             <ScrollReveal>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                 <span className="text-xs font-semibold uppercase tracking-widest text-neon">Contact Us</span>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
                 Let&apos;s{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Connect</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Connect</span>
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
@@ -215,7 +215,7 @@ export default function ContactPage() {
                       <textarea value={message} onChange={(e) => setMessage(e.target.value)} rows={5} className="rounded-lg border border-border/60 bg-background/60 px-3 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-neon resize-none" placeholder="Tell us how we can help, or what you'd like to discuss..." required disabled={isSubmitting} />
                     </div>
                     {submitError && <p className="text-sm text-red-500">{submitError}</p>}
-                    <button type="submit" disabled={isSubmitting} className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-neon px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(217,70,239,0.45)] disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100">
+                    <button type="submit" disabled={isSubmitting} className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-neon px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100">
                       {isSubmitting ? "Sending..." : "Send Message"}
                       <ArrowRight size={16} />
                     </button>

@@ -14,7 +14,7 @@ const navLinks = [
     children: [{ label: "Zopin", href: "/ventures" }],
   },
   { label: "Technology", href: "/technology" },
-  { label: "Leadership", href: "/leadership" },
+  // { label: "Leadership", href: "/leadership" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
   { label: "Privacy Policy", href: "/privacy-policy" },
@@ -117,7 +117,7 @@ export function Navbar() {
         {/* CTA */}
         <Link
           href="/contact"
-          className="hidden lg:inline-flex items-center gap-2 rounded-full bg-neon px-6 py-2.5 text-sm font-bold text-white transition-all duration-300 hover:shadow-[0_0_25px_rgba(217,70,239,0.4)] hover:scale-[1.03]"
+          className="hidden lg:inline-flex items-center gap-2 rounded-full bg-neon px-6 py-2.5 text-sm font-bold text-white transition-all duration-300"
         >
           Contact Us
           <ArrowRight size={14} />

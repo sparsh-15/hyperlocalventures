@@ -36,14 +36,14 @@ export default function CareersPage() {
           <div className="relative mx-auto max-w-4xl px-6 text-center">
             <ScrollReveal>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                 <span className="text-xs font-semibold uppercase tracking-widest text-neon">Careers</span>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
                 Join Us in Shaping{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Local Commerce</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Local Commerce</span>
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
@@ -63,7 +63,7 @@ export default function CareersPage() {
               <ScrollReveal>
                 <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                   Why{" "}
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Join Us?</span>
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Join Us?</span>
                 </h2>
               </ScrollReveal>
             </div>
@@ -96,7 +96,7 @@ export default function CareersPage() {
               <ScrollReveal>
                 <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                   Open{" "}
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Positions</span>
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Positions</span>
                 </h2>
               </ScrollReveal>
             </div>
@@ -128,14 +128,14 @@ export default function CareersPage() {
               <div>
                 <ScrollReveal>
                   <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5">
-                    <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                     <span className="text-xs font-semibold uppercase tracking-widest text-neon">Our Culture</span>
                   </div>
                 </ScrollReveal>
                 <ScrollReveal delay={0.1}>
                   <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                     How We{" "}
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Work</span>
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Work</span>
                   </h2>
                 </ScrollReveal>
                 <ScrollReveal delay={0.2}>
@@ -169,7 +169,7 @@ export default function CareersPage() {
               <ScrollReveal>
                 <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                   Growth{" "}
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Opportunities</span>
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Opportunities</span>
                 </h2>
               </ScrollReveal>
             </div>
@@ -199,7 +199,7 @@ export default function CareersPage() {
             <ScrollReveal>
               <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                 Don&apos;t See a Role?{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Reach Out Anyway.</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Reach Out Anyway.</span>
               </h2>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
@@ -211,7 +211,7 @@ export default function CareersPage() {
               <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                 <a
                   href="mailto:careers@hyperlocalventures.com"
-                  className="inline-flex items-center gap-2 rounded-full bg-neon px-10 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(217,70,239,0.4)]"
+                  className="inline-flex items-center gap-2 rounded-full bg-neon px-10 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300"
                 >
                   Submit Your Resume
                   <ArrowRight size={16} />

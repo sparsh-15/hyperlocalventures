@@ -3,7 +3,7 @@ import { MissionSection } from "@/components/mission-section"
 import { VenturesSection } from "@/components/ventures-section"
 import { CapabilitiesSection } from "@/components/capabilities-section"
 import { WhySection } from "@/components/why-section"
-import { LeadershipSection } from "@/components/leadership-section"
+// import { LeadershipSection } from "@/components/leadership-section"
 import { CareersTeaserSection } from "@/components/careers-teaser"
 import { CTASection } from "@/components/cta-section"
 
@@ -21,8 +21,8 @@ export default function Home() {
         <SectionDivider />
         <WhySection />
         <SectionDivider />
-        <LeadershipSection />
-        <SectionDivider />
+        {/* <LeadershipSection /> */}
+        {/* <SectionDivider /> */}
         <CareersTeaserSection />
         <SectionDivider />
         <CTASection />

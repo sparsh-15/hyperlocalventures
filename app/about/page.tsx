@@ -28,14 +28,14 @@ export default function AboutPage() {
           <div className="relative mx-auto max-w-4xl px-6 text-center">
             <ScrollReveal>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                 <span className="text-xs font-semibold uppercase tracking-widest text-neon">Our Story</span>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
                 Why We{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Started</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Started</span>
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
@@ -60,14 +60,14 @@ export default function AboutPage() {
               <div>
                 <ScrollReveal>
                   <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5">
-                    <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                     <span className="text-xs font-semibold uppercase tracking-widest text-neon">Market Problem</span>
                   </div>
                 </ScrollReveal>
                 <ScrollReveal delay={0.1}>
                   <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                     Local Commerce Is{" "}
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Broken</span>
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Broken</span>
                   </h2>
                 </ScrollReveal>
                 <ScrollReveal delay={0.2}>
@@ -108,14 +108,14 @@ export default function AboutPage() {
           <div className="relative mx-auto max-w-4xl px-6 text-center">
             <ScrollReveal>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                 <span className="text-xs font-semibold uppercase tracking-widest text-neon">Our Vision</span>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
                 Local Commerce{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Transformation</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Transformation</span>
                 {" "}Across India
               </h2>
             </ScrollReveal>
@@ -140,14 +140,14 @@ export default function AboutPage() {
             <div className="text-center mb-16">
               <ScrollReveal>
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5">
-                  <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                   <span className="text-xs font-semibold uppercase tracking-widest text-neon">Our Values</span>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={0.1}>
                 <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
                   What We{" "}
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Stand For</span>
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Stand For</span>
                 </h2>
               </ScrollReveal>
             </div>
@@ -178,14 +178,14 @@ export default function AboutPage() {
           <div className="relative mx-auto max-w-4xl px-6 text-center">
             <ScrollReveal>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                 <span className="text-xs font-semibold uppercase tracking-widest text-neon">Future Roadmap</span>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                 Where We&apos;re{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x">Headed</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon">Headed</span>
               </h2>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>

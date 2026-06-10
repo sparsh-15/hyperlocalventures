@@ -49,7 +49,7 @@ const features = [
 
 function ShopkeeperDashboardMock() {
   return (
-    <div className="motion-panel animate-float-strong rounded-2xl border border-border/40 bg-surface overflow-hidden">
+    <div className="motion-panel rounded-2xl border border-border/40 bg-surface overflow-hidden">
       {/* Top bar */}
       <div className="flex items-center justify-between border-b border-border/30 px-5 py-3">
         <div className="flex items-center gap-2">
@@ -171,7 +171,7 @@ export function ShopkeeperSection() {
           <div className="w-full max-w-2xl text-center lg:sticky lg:top-32 lg:w-5/12 lg:max-w-none lg:self-start lg:text-left">
             <ScrollReveal>
               <div className="mb-6 inline-flex items-center justify-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5 lg:justify-start">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                 <span className="text-xs font-semibold uppercase tracking-widest text-neon">
                   For Shopkeepers
                 </span>
@@ -181,7 +181,7 @@ export function ShopkeeperSection() {
             <ScrollReveal delay={0.1}>
               <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
                 Powering Every{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x neon-text-glow">Local Business</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon neon-text-glow">Local Business</span>
               </h2>
             </ScrollReveal>
 

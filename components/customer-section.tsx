@@ -51,7 +51,7 @@ export function CustomerSection() {
             <ScrollReveal>
               <div className="mx-auto max-w-[320px]">
                 {/* Phone shell */}
-                <div className="motion-panel animate-float-strong-reverse relative rounded-[2.5rem] border-2 border-border/60 bg-surface p-3 shadow-2xl shadow-neon/5">
+                <div className="motion-panel relative rounded-[2.5rem] border-2 border-border/60 bg-surface p-3 shadow-2xl shadow-neon/5">
                   {/* Phone notch */}
                   <div className="absolute left-1/2 top-0 -translate-x-1/2 h-7 w-32 rounded-b-2xl bg-background z-10" />
 
@@ -172,7 +172,7 @@ export function CustomerSection() {
           <div className="w-full max-w-2xl text-center lg:w-7/12 lg:max-w-none lg:text-left">
             <ScrollReveal>
               <div className="mb-6 inline-flex items-center justify-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5 lg:justify-start">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                 <span className="text-xs font-semibold uppercase tracking-widest text-neon">
                   For Customers
                 </span>
@@ -182,7 +182,7 @@ export function CustomerSection() {
             <ScrollReveal delay={0.1}>
               <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl text-balance">
                 Find the Right Store.{" "}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x neon-text-glow">Right Now.</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon neon-text-glow">Right Now.</span>
               </h2>
             </ScrollReveal>
 

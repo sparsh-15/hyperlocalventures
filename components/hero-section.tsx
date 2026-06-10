@@ -29,7 +29,7 @@ export function HeroSection() {
       {/* Floating context nodes — desktop only */}
       <div className="pointer-events-none absolute inset-0 z-[2] hidden lg:block" aria-hidden="true">
         <div className="hero-orbit hero-orbit-left -translate-y-3">
-          <div className="flex flex-col items-center animate-float-strong-reverse">
+          <div className="flex flex-col items-center">
             <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/90 shadow-xl backdrop-blur-md border border-white/20 text-primary">
               <Store size={30} />
             </div>
@@ -38,7 +38,7 @@ export function HeroSection() {
           </div>
         </div>
         <div className="hero-orbit hero-orbit-right -translate-y-50">
-          <div className="flex flex-col items-center animate-float-strong">
+          <div className="flex flex-col items-center">
             <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/90 shadow-xl backdrop-blur-md border border-white/20 text-neon">
               <Bot size={30} />
             </div>
@@ -57,7 +57,7 @@ export function HeroSection() {
           style={{ animationDelay: "0.1s" }}
         >
           <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+            <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
           </span>
           <span className="text-xs font-semibold tracking-widest text-primary uppercase">
@@ -73,7 +73,7 @@ export function HeroSection() {
         >
           <span className="block">BUILDING THE FUTURE OF</span>
           <span className="mt-1 block md:mt-2">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-neon to-accent animate-gradient-x">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-neon to-accent">
               AI-POWERED LOCAL
             </span>
           </span>
@@ -98,15 +98,15 @@ export function HeroSection() {
         >
           <Link
             href="/ventures"
-            className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-neon px-10 py-4 text-sm font-bold tracking-wide text-white uppercase transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(217,70,239,0.5)]"
+            className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-neon px-10 py-4 text-sm font-bold tracking-wide text-white uppercase transition-all duration-300"
           >
-            <span className="animate-shimmer pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+            
             <span className="relative">Explore Our Ventures</span>
             <ArrowRight size={16} className="relative transition-transform group-hover:translate-x-1" />
           </Link>
           <Link
             href="/contact"
-            className="flex items-center gap-2 rounded-full border border-primary/25 bg-primary/5 px-10 py-4 text-sm font-bold tracking-wide text-primary uppercase transition-all duration-300 hover:border-primary/50 hover:bg-primary/10 hover:shadow-[0_0_20px_rgba(76,29,149,0.15)]"
+            className="flex items-center gap-2 rounded-full border border-primary/25 bg-primary/5 px-10 py-4 text-sm font-bold tracking-wide text-primary uppercase transition-all duration-300 hover:border-primary/50 hover:bg-primary/10"
           >
             Contact Us
           </Link>

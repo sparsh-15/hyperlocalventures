@@ -85,7 +85,7 @@ export function AboutSection() {
           <div className="mx-auto max-w-3xl text-center lg:mx-0 lg:flex-1 lg:text-left">
             <ScrollReveal>
               <div className="mb-6 inline-flex items-center justify-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5 lg:justify-start">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+                <span className="h-1.5 w-1.5 rounded-full bg-neon" />
                 <span className="text-xs font-semibold uppercase tracking-widest text-neon">
                   What We Are Building
                 </span>
@@ -96,7 +96,7 @@ export function AboutSection() {
               <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
                 ZoPin -
                 <br />
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon animate-gradient-x neon-text-glow">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon neon-text-glow">
                   An AI-Native Hyperlocal Commerce Platform
                 </span>
               </h2>

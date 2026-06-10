@@ -26,7 +26,7 @@ export function UniquenessSection() {
         <div className="text-center max-w-3xl mx-auto">
           <ScrollReveal>
             <div className="inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5 mb-6">
-              <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+              <span className="h-1.5 w-1.5 rounded-full bg-neon" />
               <span className="text-xs font-semibold uppercase tracking-widest text-neon">
                 First of Its Kind
               </span>

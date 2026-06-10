@@ -16,7 +16,7 @@ export function MissionSection() {
       <div className="relative mx-auto max-w-5xl px-6 text-center">
         <ScrollReveal>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-neon" />
+            <span className="h-1.5 w-1.5 rounded-full bg-neon" />
             <span className="text-xs font-semibold uppercase tracking-widest text-neon">Our Mission</span>
           </div>
         </ScrollReveal>
