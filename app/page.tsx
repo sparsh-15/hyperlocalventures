@@ -1,10 +1,10 @@
 import { HeroSection } from "@/components/hero-section"
-import { AboutSection } from "@/components/about-section"
-import { ProblemSection } from "@/components/problem-section"
-import { ShopkeeperSection } from "@/components/shopkeeper-section"
-import { CustomerSection } from "@/components/customer-section"
-import { ImpactSection } from "@/components/impact-section"
-import { UniquenessSection } from "@/components/uniqueness-section"
+import { MissionSection } from "@/components/mission-section"
+import { VenturesSection } from "@/components/ventures-section"
+import { CapabilitiesSection } from "@/components/capabilities-section"
+import { WhySection } from "@/components/why-section"
+import { LeadershipSection } from "@/components/leadership-section"
+import { CareersTeaserSection } from "@/components/careers-teaser"
 import { CTASection } from "@/components/cta-section"
 
 export default function Home() {
@@ -13,17 +13,17 @@ export default function Home() {
       <div className="relative z-10">
         <HeroSection />
         <SectionDivider />
-        <AboutSection />
+        <MissionSection />
         <SectionDivider />
-        <ProblemSection />
+        <VenturesSection />
         <SectionDivider />
-        <ShopkeeperSection />
+        <CapabilitiesSection />
         <SectionDivider />
-        <CustomerSection />
+        <WhySection />
         <SectionDivider />
-        <ImpactSection />
+        <LeadershipSection />
         <SectionDivider />
-        <UniquenessSection />
+        <CareersTeaserSection />
         <SectionDivider />
         <CTASection />
       </div>
@@ -34,7 +34,7 @@ export default function Home() {
 function SectionDivider() {
   return (
     <div className="relative mx-auto w-full max-w-7xl px-6" aria-hidden="true">
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+      <div className="h-px w-full bg-linear-to-r from-transparent via-primary/20 to-transparent" />
     </div>
   )
 }

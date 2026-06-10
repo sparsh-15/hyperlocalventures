@@ -46,7 +46,7 @@ export function ImpactSection() {
   return (
     <section
       id="impact"
-      className="section-shell relative overflow-hidden py-28 md:py-36 lg:py-44"
+      className="section-shell relative overflow-hidden py-14 md:py-20 lg:py-44"
     >
       {/* Background accent */}
       <div

@@ -42,7 +42,7 @@ export function CustomerSection() {
   return (
     <section
       id="customers"
-      className="section-shell relative overflow-hidden py-28 md:py-36 lg:py-44"
+      className="section-shell relative overflow-hidden py-14 md:py-20 lg:py-44"
     >
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-20">

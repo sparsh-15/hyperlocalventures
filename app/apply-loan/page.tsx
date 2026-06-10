@@ -1,7 +1,7 @@
 export default function ApplyLoanPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center px-6 py-24 md:py-32">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center px-6 py-12 md:py-16">
         <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-neon/20 bg-neon/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-neon">
           Apply Loan
         </p>
@@ -24,10 +24,10 @@ export default function ApplyLoanPage() {
           <p className="text-xs text-muted-foreground/80">
             Want to know when this launches? Drop us a line at{" "}
             <a
-              href="mailto:support@zopin.in"
+              href="mailto:support@hyperlocalventure.in"
               className="font-semibold text-neon hover:underline"
             >
-              support@zopin.in
+              support@hyperlocalventure.in
             </a>
             .
           </p>

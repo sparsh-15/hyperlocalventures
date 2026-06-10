@@ -12,7 +12,7 @@ const comparisons = [
 
 export function UniquenessSection() {
   return (
-    <section className="section-shell relative overflow-hidden py-28 md:py-36 lg:py-44">
+    <section className="section-shell relative overflow-hidden py-14 md:py-20 lg:py-44">
       {/* Center glow */}
       <div
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-15 pointer-events-none"
