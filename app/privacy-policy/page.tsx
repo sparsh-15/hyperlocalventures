@@ -76,8 +76,8 @@ export default function PrivacyPolicyPage() {
                   <p className="leading-relaxed">
                     You have the right to access, correct, or request deletion of your personal data. To exercise
                     these rights, please contact us at{" "}
-                    <a href="mailto:support@hyperlocalventure.in" className="text-neon hover:underline">
-                      support@hyperlocalventure.in
+                    <a href="mailto:support@hyperlocalventures.in" className="text-neon hover:underline">
+                      support@hyperlocalventures.in
                     </a>.
                   </p>
                 </div>
@@ -88,8 +88,8 @@ export default function PrivacyPolicyPage() {
                     If you have any questions about this Privacy Policy, please contact us at:<br />
                     <strong className="text-foreground">Hyperlocal Ventures Private Limited</strong><br />
                     Pune, Maharashtra, India<br />
-                    <a href="mailto:support@hyperlocalventure.in" className="text-neon hover:underline">
-                      support@hyperlocalventure.in
+                    <a href="mailto:support@hyperlocalventures.in" className="text-neon hover:underline">
+                      support@hyperlocalventures.in
                     </a>
                   </p>
                 </div>

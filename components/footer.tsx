@@ -25,10 +25,10 @@ export function Footer() {
             </p>
             <p className="text-xs text-white/50">Pune, Maharashtra, India</p>
             <a
-              href="mailto:support@hyperlocalventure.in"
+              href="mailto:support@hyperlocalventures.in"
               className="mt-3 block text-sm font-bold text-purple-300 hover:text-white transition-colors hover:underline"
             >
-              support@hyperlocalventure.in
+              support@hyperlocalventures.in
             </a>
             <a
               href="https://zopin.in"

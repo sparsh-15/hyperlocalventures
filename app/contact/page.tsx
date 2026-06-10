@@ -122,7 +122,7 @@ export default function ContactPage() {
                         </div>
                         <div>
                           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">General</p>
-                          <a href="mailto:support@hyperlocalventure.in" className="text-sm text-foreground hover:text-neon transition-colors">support@hyperlocalventure.in</a>
+                          <a href="mailto:support@hyperlocalventures.in" className="text-sm text-foreground hover:text-neon transition-colors">support@hyperlocalventures.in</a>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
@@ -161,7 +161,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Zopin Support</p>
-                        <a href="mailto:support@hyperlocalventure.in" className="text-sm text-foreground hover:text-neon transition-colors">support@hyperlocalventure.in</a>
+                        <a href="mailto:support@hyperlocalventures.in" className="text-sm text-foreground hover:text-neon transition-colors">support@hyperlocalventures.in</a>
                       </div>
                     </div>
                   </div>

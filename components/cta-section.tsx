@@ -85,8 +85,8 @@ export function CTASection() {
                   </div>
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Email</p>
-                    <a href="mailto:support@hyperlocalventure.in" className="text-sm text-foreground hover:text-neon transition-colors">
-                      support@hyperlocalventure.in
+                    <a href="mailto:support@hyperlocalventures.in" className="text-sm text-foreground hover:text-neon transition-colors">
+                      support@hyperlocalventures.in
                     </a>
                   </div>
                 </div>
