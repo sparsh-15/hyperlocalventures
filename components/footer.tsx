@@ -7,8 +7,8 @@ export function Footer() {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-75 w-full max-w-4xl bg-purple-500/10 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute top-0 left-0 h-px w-full bg-white/10" />
 
-      <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-        <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+      <div className="mx-auto max-w-7xl px-6 py-8 md:py-10">
+        <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
           {/* Brand */}
           <div className="text-center md:text-left">
             <div className="mb-4">
@@ -96,7 +96,7 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-10 flex flex-col items-center gap-4 border-t border-white/10 pt-8 md:flex-row md:justify-between">
+        <div className="mt-6 flex flex-col items-center gap-3 border-t border-white/10 pt-5 md:flex-row md:justify-between">
           <p className="text-[10px] font-bold text-white/30 uppercase tracking-[0.05em]">
             © {new Date().getFullYear()} Hyperlocal Ventures Private Limited.
           </p>
