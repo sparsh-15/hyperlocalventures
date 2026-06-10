@@ -160,7 +160,7 @@ export default function ContactPage() {
                         <Mail size={16} />
                       </div>
                       <div>
-                        <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Zopin Support</p>
+                        <p className="text-xs font-semibold tracking-widest text-muted-foreground">Zopin Support</p>
                         <a href="mailto:support@hyperlocalventures.in" className="text-sm text-foreground hover:text-neon transition-colors">support@hyperlocalventures.in</a>
                       </div>
                     </div>

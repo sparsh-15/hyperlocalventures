@@ -46,7 +46,7 @@ export function UniquenessSection() {
               No platform like this currently exists. Not ecommerce. Not a
               marketplace. Not an aggregator.{" "}
               <span className="text-foreground font-semibold">
-                A true AI-native ZoPin commerce intelligence network.
+                A true AI-native Zopin commerce intelligence network.
               </span>
             </p>
           </ScrollReveal>

@@ -24,11 +24,11 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'ZoPin | The Intelligence Layer for Local Commerce',
+  title: 'Hyperlocal Ventures | Building Ventures at the Intersection of AI and Commerce',
   description:
-    'AI-native ZoPin commerce platform connecting customers to the right nearby store and the right offer instantly. Built to transform local India.',
+    'AI-native Zopin commerce platform connecting customers to the right nearby store and the right offer instantly. Built to transform local India.',
   keywords: [
-    'ZoPin',
+    'Zopin',
     'AI commerce',
     'local business',
     'discount intelligence',
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     'shopkeeper platform',
   ],
   openGraph: {
-    title: 'ZoPin | The Intelligence Layer for Local Commerce',
+    title: 'Hyperlocal Ventures | Building Ventures at the Intersection of AI and Commerce',
     description:
       'Connecting customers to the right nearby store and the right offer instantly.',
     url: 'https://zopin.io',
-    siteName: 'ZoPin',
+    siteName: 'Zopin',
     type: 'website',
   },
 }

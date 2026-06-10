@@ -56,7 +56,7 @@ export function VenturesSection() {
                   href="https://zopin.in"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/btn relative flex items-center gap-2 overflow-hidden rounded-full bg-neon px-8 py-3 text-sm font-bold text-white uppercase tracking-wide transition-all duration-300"
+                  className="group/btn relative flex items-center gap-2 overflow-hidden rounded-full bg-neon px-8 py-3 text-sm font-bold text-white tracking-wide transition-all duration-300"
                 >
                   
                   <span className="relative">Visit Zopin</span>

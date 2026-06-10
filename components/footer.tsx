@@ -13,7 +13,7 @@ export function Footer() {
           <div className="text-center md:text-left">
             <div className="mb-4">
               <Image
-                src="/images/hv.png"
+                src="/images/hv.jpeg"
                 alt="Hyperlocalventures"
                 width={180}
                 height={56}

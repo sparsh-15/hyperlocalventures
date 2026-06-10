@@ -18,7 +18,7 @@ export default function ApplyLoanPage() {
           </p>
           <p className="text-base text-muted-foreground md:text-lg">
             We&apos;re building seamless, data-backed loan experiences for shopkeepers
-            on ZoPin. Soon you&apos;ll be able to explore working capital options tailored
+            on Zopin. Soon you&apos;ll be able to explore working capital options tailored
             to your store&apos;s performance.
           </p>
           <p className="text-xs text-muted-foreground/80">

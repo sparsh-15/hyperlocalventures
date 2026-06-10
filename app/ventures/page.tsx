@@ -79,13 +79,13 @@ export default function VenturesPage() {
                       href="https://zopin.in"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-neon px-8 py-3 text-sm font-bold text-white uppercase tracking-wide transition-all duration-300"
+                      className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-neon px-8 py-3 text-sm font-bold text-white tracking-wide transition-all duration-300"
                     >
                       
                       <span className="relative">Visit Zopin</span>
                       <ExternalLink size={14} className="relative" />
                     </a>
-                    <Link href="/contact" className="flex items-center gap-2 rounded-full border border-primary/25 bg-primary/5 px-8 py-3 text-sm font-bold uppercase tracking-wide text-primary transition-all duration-300 hover:border-primary/50 hover:bg-primary/10">
+                    <Link href="/contact" className="flex items-center gap-2 rounded-full border border-primary/25 bg-primary/5 px-8 py-3 text-sm font-bold tracking-wide text-primary transition-all duration-300 hover:border-primary/50 hover:bg-primary/10">
                       Partner With Us <ArrowRight size={14} />
                     </Link>
                   </div>

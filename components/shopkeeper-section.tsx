@@ -56,7 +56,7 @@ function ShopkeeperDashboardMock() {
           <div className="flex flex-col">
             <Image
               src="/images/logo.svg"
-              alt="ZoPin Logo"
+              alt="Zopin Logo"
               width={100}
               height={32}
               className="h-6 w-auto"

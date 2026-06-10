@@ -54,7 +54,7 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex min-w-0 shrink-0 items-center" aria-label="Hyperlocalventures home">
           <Image
-            src="/images/hv.png"
+            src="/images/hv.jpeg"
             alt="Hyperlocalventures"
             width={165}
             height={48}

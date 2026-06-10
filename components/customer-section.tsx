@@ -71,7 +71,7 @@ export function CustomerSection() {
                     <div className="px-5 pb-3 pt-4">
                       <Image
                         src="/images/logo.svg"
-                        alt="ZoPin Logo"
+                        alt="Zopin Logo"
                         width={120}
                         height={40}
                         className="h-8 w-auto"
@@ -111,21 +111,21 @@ export function CustomerSection() {
                       {[
                         {
                           name: "Fresh Mart Grocery",
-                          offer: "ZoPin Deal: 20% off veg",
+                          offer: "Zopin Deal: 20% off veg",
                           dist: "0.3 km",
                           live: true,
                           time: "Ends in 2h",
                         },
                         {
                           name: "QuickWash Laundry",
-                          offer: "ZoPin Deal: Buy 2 Get 1",
+                          offer: "Zopin Deal: Buy 2 Get 1",
                           dist: "0.5 km",
                           live: true,
                           time: "Ends in 4h",
                         },
                         {
                           name: "Kumar Electronics",
-                          offer: "ZoPin Deal: 15% off",
+                          offer: "Zopin Deal: 15% off",
                           dist: "0.8 km",
                           live: false,
                           time: "Tomorrow",

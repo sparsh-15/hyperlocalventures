@@ -56,7 +56,9 @@ export function AboutSection() {
   useEffect(() => {
     if (!api) return
     setCurrent(api.selectedScrollSnap())
-    api.on("select", () => setCurrent(api.selectedScrollSnap()))
+    const onSelect = () => setCurrent(api.selectedScrollSnap())
+    api.on("select", onSelect)
+    return () => { api.off("select", onSelect) }
   }, [api])
 
   useEffect(() => {
@@ -94,7 +96,7 @@ export function AboutSection() {
 
             <ScrollReveal delay={0.1}>
               <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-                ZoPin -
+                Zopin -
                 <br />
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-neon neon-text-glow">
                   An AI-Native Hyperlocal Commerce Platform
@@ -176,7 +178,7 @@ export function AboutSection() {
                   <div className="flex flex-col">
                     <Image
                       src="/images/logo.svg"
-                      alt="ZoPin Logo"
+                      alt="Zopin Logo"
                       width={100}
                       height={32}
                       className="h-7 w-auto"
